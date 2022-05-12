@@ -74,6 +74,7 @@ export default {
             authorization: `Bearer ${this.$auth.strategy.token.get()}`,
           })
           this.$toast.success('Successfully login')
+          this.$router.push('/');
         })
     },
   },
